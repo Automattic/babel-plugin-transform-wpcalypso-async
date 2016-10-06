@@ -1,0 +1,33 @@
+{
+  "name": "babel-plugin-transform-wpcalypso-async",
+  "version": "0.1.0",
+  "description": "Async transformation utilities for the WordPress.com Calypso project",
+  "main": "index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "author": "Automattic, Inc.",
+  "contributors": [
+    {
+      "name": "Andrew Duthie",
+      "email": "andrew@andrewduthie.com",
+      "url": "http://andrewduthie.com"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "npm run lint"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-wpcalypso": "^0.5.0",
+    "eslint-plugin-wpcalypso": "^2.0.0"
+  }
+}

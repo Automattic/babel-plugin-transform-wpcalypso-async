@@ -1,0 +1,10 @@
+{
+	"root": true,
+	"extends": "wpcalypso",
+	"env": {
+		"node": true
+	},
+	"rules": {
+		"max-len": [ 2, { "code": 120 } ]
+	}
+}
