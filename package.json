@@ -17,7 +17,8 @@
   "license": "GPL-2.0+",
   "scripts": {
     "lint": "eslint index.js",
-    "test": "npm run lint"
+    "unit-test": "mocha",
+    "test": "npm run lint && npm run unit-test"
   },
   "files": [
     "index.js"
@@ -26,9 +27,13 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "chai": "^3.5.0",
     "eslint": "^3.7.1",
     "eslint-config-wpcalypso": "^0.5.0",
-    "eslint-plugin-wpcalypso": "^2.0.0"
+    "eslint-plugin-wpcalypso": "^2.0.0",
+    "mocha": "^3.1.0"
   },
   "dependencies": {
     "lodash.kebabcase": "^4.1.1"
