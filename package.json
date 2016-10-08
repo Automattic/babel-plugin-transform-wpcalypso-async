@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-wpcalypso-async",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Async transformation utilities for the WordPress.com Calypso project",
   "main": "index.js",
   "keywords": [
@@ -29,5 +29,8 @@
     "eslint": "^3.7.1",
     "eslint-config-wpcalypso": "^0.5.0",
     "eslint-plugin-wpcalypso": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "^4.1.1"
   }
 }
