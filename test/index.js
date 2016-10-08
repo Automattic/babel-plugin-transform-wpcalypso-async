@@ -54,10 +54,10 @@ describe( 'babel-plugin-transform-wpcalypso-async', () => {
 			expect( code ).to.equal( 'requireAsync("foo");' );
 		} );
 
-		it( 'should not transform if no string argument', () => {
+		it( 'should remove node if invalid call', () => {
 			const code = transform( 'asyncRequire();' );
 
-			expect( code ).to.equal( 'asyncRequire();' );
+			expect( code ).to.equal( '' );
 		} );
 
 		context( 'async', () => {

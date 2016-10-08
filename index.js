@@ -49,7 +49,7 @@ module.exports = function( babel ) {
 
 				const argument = path.node.arguments[ 0 ];
 				if ( ! argument || 'StringLiteral' !== argument.type ) {
-					return;
+					return path.remove();
 				}
 
 				// Determine async from Babel plugin options
